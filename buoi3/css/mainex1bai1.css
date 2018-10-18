@@ -1,0 +1,29 @@
+div{
+	width: 150px;
+	height: 150px;
+	border: 1px solid gray;
+	padding: 2px;
+}
+.anh{
+	display: inline-block;
+}
+.text{
+	font-family: arial,'time new roman';
+	font-size: 15px;
+	color: red;
+	font-weight: bold;
+}
+.text1{
+	font-family: arial,'time new roman';
+	font-size: 15px;
+	color: #f28a51;
+}
+.text:hover{
+	color: blue;
+}
+.text1:hover{
+	color: blue;
+}
+div:hover{
+	border-color: red;
+}
