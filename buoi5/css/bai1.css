@@ -29,7 +29,7 @@ body{
 	line-height: 40px;
 	padding-left: 8px;
 	font-family: arial;
-	border-right: 1px solid gray;
+	border-right: 1px solid #cd5555;
 	padding-right: 8px;
 	font-size: 15px;
 }
@@ -555,7 +555,7 @@ h4>a{
 }
 .m-r-t1>a{
 	text-decoration: none;
-	color: black;
+	color: #383838;
 	font-family: arial;
 	font-size: 15px;
 	font-weight: bold;
@@ -652,6 +652,7 @@ h4>a{
     margin-bottom: 0px;
     padding-left: 20px;
     padding-bottom: 13px;
+    color: #595959;
 }
 button{
 	width: 120px;
@@ -688,6 +689,7 @@ button{
 	font-family: arial;
 	padding-left: 20px;
 	margin: 15px 0px 15px 0px;
+	color: #595959;
 }
 .wf{
 	width: 230px;
