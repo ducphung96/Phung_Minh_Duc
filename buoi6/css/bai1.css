@@ -147,6 +147,7 @@ button{
 	margin-top: 15px;
 	margin-bottom: 30px;
 	background: #20b2aa;
+	color: #fff;
 }
 @media (max-width: 960px){
 	#menu{
