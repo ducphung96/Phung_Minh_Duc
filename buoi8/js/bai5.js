@@ -1,17 +1,19 @@
 function bai5(n){
 	var n = parseInt(prompt("Nhập n"));
-	document.write("Tổng s là: " + bai5(n));
-	function bai5(n){
-		var s = 0;
-		var i = 1;
-		var p = 1;
-		var gt = 1;
-		while(i<=n){
-			gt = gt*i
-			s += p/gt;
-			p++;
-			i++;
+	var s = 0;
+	var p = 1;
+	var gt = 1;
+	if (n <= 0)
+	{
+	    alert("Bạn phải nhập số > 0");
+	}
+	else
+	{
+	    for (var i = 1; i <= n; i++){
+	       	gt = gt*i;
+	        s += p/gt;
+	        p++;
 		}
-		return s;
+	 document.write("Tổng giá trị s là: " + s);
 	}
 }
