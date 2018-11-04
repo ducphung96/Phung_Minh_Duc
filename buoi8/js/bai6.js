@@ -1,5 +1,5 @@
 function bai6(n){
-	var n = parseInt(prompt("Nhập số cần kiểm tra"));
+	var n = parseInt(prompt("Mời bạn nhập n :"));
 	document.write("Tổng số từ 1 tới " + n + " là: " + bai6(n));
 	function bai6(n){
 		var tong = 0;

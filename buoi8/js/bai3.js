@@ -1,5 +1,5 @@
 function bai3(n){
-	var n = parseInt(prompt("Nhập số cần kiểm tra"));
+	var n = parseInt(prompt("Mời bạn nhập n : "));
 	document.write("Tổng s là: " + bai3(n));
 	function bai3(n){
 		var s = 0;

@@ -1,5 +1,4 @@
 function bai1() {
-	// var cc = 7;
 	document.write('<table style=" float: left; width:20%">')
     for(i=1;i<=7;i++){
     	document.write('<tr>')
@@ -11,8 +10,6 @@ function bai1() {
 		document.write('</tr>')
 	}
 	document.write('</table>')
-	// var cd = 7;
-	// var cr = 7;
 	document.write('<table style=" float: left; width:20%">')
     for(k=1;k<=7;k++){
     	document.write('<tr>')
@@ -24,8 +21,6 @@ function bai1() {
 		document.write('</tr>')
 	}
 	document.write('</table>')
-	// var cd = 7;
-	// var cr = 7;
 	document.write('<table style=" float: left; width:20%">')
     for(k=1;k<=7;k++){
     	document.write('<tr>')
