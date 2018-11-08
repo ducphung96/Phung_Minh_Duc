@@ -25,9 +25,9 @@ div.tab button.active {
     background: #fff;
 }
 #div1{
-	width: 80%; 
+	width: 100%; 
 	background: #FFE4B5;
 }
 #div2{
-	padding: 15px 0px 35px 10px;
+	padding: 20px 0px 35px 15px;
 }
