@@ -1,0 +1,33 @@
+div.tab {
+    overflow: hidden; 
+}
+div.tab button {
+    background-color: gray; 
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: 0.3s;
+    font-size: 17px;
+    color: #fff;
+    margin-right: 5px;
+}
+div.tab button.active {
+    background-color: #fff;
+    color: black;
+}
+.tabcontent {
+	width: 80%;
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+    background: #fff;
+}
+#div1{
+	width: 80%; 
+	background: #FFE4B5;
+}
+#div2{
+	padding: 15px 0px 35px 10px;
+}
