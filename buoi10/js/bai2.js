@@ -105,9 +105,5 @@ document.getElementById('add').addEventListener('click', function(e){
 });
 
 document.getElementById('reset').addEventListener('click', function(){
-	document.getElementById('errorName').innerHTML = '';
-	document.getElementById('errorSdt').innerHTML = '';
-	document.getElementById('errorEmail').innerHTML = '';
-	document.getElementById('errorrPassword').innerHTML = '';
-	document.getElementById('errorPassword').innerHTML = '';
+	location.reload();
 })
