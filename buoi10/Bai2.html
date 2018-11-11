@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/bai2.css">
+</head>
+<body>
+	<form>
+		<div id="div">	
+			<div class="ct">
+				<label>Họ và tên</label>
+				<input type="text" name="" id="name" class="ip" placeholder="Nhập họ tên...">
+				<span class="error" id="errorname"></span>
+			</div>
+			<div class="ct">
+				<label>Giới tính</label>
+				<input type="radio" name="gioitinh"> Nam
+				<input type="radio" name="gioitinh"> Nữ
+			</div>
+			<div class="ct">
+				<label>Email</label>
+				<input type="email" name="" id="email" class="ip" placeholder="Nhập email...">
+				<span class="error" id="erroremail"></span>
+			</div>
+			<div class="ct">
+				<label>Số điện thoại</label>
+				<input type="text" name="" id="phone" class="ip" placeholder="Nhập số điện thoại...">
+				<span class="error" id="errorMoblie"></span>
+			</div>
+			<div class="ct">
+				<label>Mật khẩu</label>
+				<input type="password" name="" id="password" class="ip">
+				<span class="error" id="errorpassword"></span>
+			</div>
+			<div class="ct">
+				<label>Xác nhận Mật khẩu</label>
+				<input type="password" name="" id="repassword" class="ip">
+				<span class="error" id="errorrepassword"></span>
+			</div>
+		</div>
+		<div style="width: 50%; margin: 0 auto; padding-top: 20px;">
+			<div style="float: left; padding-right: 40%;">
+				<button id="add" class="btn">Đăng ký</button>
+			</div>
+			<div>
+				<button id="reset" class="btn">Xóa trắng</button>
+			</div>
+		</div>
+	</form>
+	<script type="text/javascript" src="js/bai2.js"></script>
+</body>
+</html>
