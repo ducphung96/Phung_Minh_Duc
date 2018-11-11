@@ -14,9 +14,14 @@
 				<span class="error" id="errorname"></span>
 			</div>
 			<div class="ct">
-				<label>Giới tính</label>
-				<input type="radio" name="gioitinh"> Nam
-				<input type="radio" name="gioitinh"> Nữ
+				<label style="display: inline-block;">Giới tính</label>
+				<div style="display: inline-block;width: 40%;">
+				<input type="radio" name="gioitinh" id="nam"> Nam
+				<input type="radio" name="gioitinh" id="nu"> Nữ
+				</div>
+				<div style="display: inline-block; margin-left: 5%; color: red;">
+				<span class="error" id="errorgioitinh"></span>
+				</div>
 			</div>
 			<div class="ct">
 				<label>Email</label>

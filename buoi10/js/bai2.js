@@ -43,6 +43,15 @@ document.getElementById('add').addEventListener('click', function(e){
 		checkname=true;
 	}
 
+	var nam = document.getElementById('nam');
+	var nu = document.getElementById('nu');
+	if (!nam.checked && !nu.checked) {
+		document.getElementById('errorgioitinh').innerHTML = 'Yêu cầu chọn giới tính'
+	}
+	else{
+		document.getElementById('errorgioitinh').innerHTML = ''
+	}
+
 	if (email.value.trim() == '') {
 		document.getElementById('erroremail').innerHTML = 'Yêu cầu nhập Email';
 	}
