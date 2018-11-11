@@ -10,6 +10,7 @@ document.getElementById('add').addEventListener('click', function(e){
 	var checkpass = false;
 	var checkrepass = false;
 	var checkphone = false;
+	var checkgt = false;
 	function validateEmail(email) {
 		var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 		return re.test(String(email).toLowerCase());
@@ -50,6 +51,7 @@ document.getElementById('add').addEventListener('click', function(e){
 	}
 	else{
 		document.getElementById('errorgioitinh').innerHTML = ''
+		checkgt = true;
 	}
 
 	if (email.value.trim() == '') {
@@ -97,11 +99,15 @@ document.getElementById('add').addEventListener('click', function(e){
 		checkphone=true;
 	}
 
-	if (checkname==true && checkemail==true && checkphone==true && checkpass==true && checkrepass==true) {
+	if (checkname==true && checkemail==true && checkphone==true && checkpass==true && checkrepass==true && checkgt==true) {
 		alert('Chúc mừng bạn đã đăng ký thành công !')
 	}
 });
 
 document.getElementById('reset').addEventListener('click', function(){
-	location.reload();
+	document.getElementById('errorName').innerHTML = '';
+	document.getElementById('errorSdt').innerHTML = '';
+	document.getElementById('errorEmail').innerHTML = '';
+	document.getElementById('errorrPassword').innerHTML = '';
+	document.getElementById('errorPassword').innerHTML = '';
 })
