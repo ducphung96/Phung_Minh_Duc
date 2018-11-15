@@ -1,0 +1,51 @@
+*{
+  box-sizing: border-box;
+}
+#div{
+  width: 70%;
+  margin: 0 auto;
+}
+.container{
+  width: 100%;
+  background: #f44336;
+  padding: 2em 4em;
+}
+#input{
+  height: 40px;
+  width: 73%;
+}
+#add{
+  height: 40px;
+  width: 27%;
+}
+.container h1{
+  text-align: center;
+  color: #fff;
+}
+#content{
+  width: 100%;
+  background: #efeeee;
+
+}
+#content .check{
+  width: 6%;
+  text-align: center;
+  color: #fff;
+
+}
+#content .text{
+  width: 90%;
+
+}
+#content .del{
+  width: 10%;
+  text-align: center;
+}
+.del:hover {
+  background: #f44336;
+}
+#content>tr{
+  height: 40px;
+  cursor: pointer;
+  font-size: 18px;
+}
