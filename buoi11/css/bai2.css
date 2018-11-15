@@ -5,33 +5,34 @@ body{
 	width: 65%;
 	margin: 0 auto;
 }
+.div1{
+	padding-left: 50px;
+	margin-bottom: 45px;
+}
 h1{
 	color: #fff;
-	font-size: 80px;
+	font-size: 75px;
 	font-style: italic;
 	margin: 0px;
 	
 }
 .lb{
 	color: #CCFF33;
+	font-size: 25px;
 }
-label{
+.lb1{
 	font-size: 25px;
 	color: #fff;
 }
 h3{
-	margin-top: 0px;
 	color: #fff;
 	font-style: italic;	
-	padding-left: 7%;
+	padding-left: 45px;
+	margin-top: 0px;
 }
 .fa-hand-point-right{
 	color: #CCFF33;
 	font-size: 25px;
-}
-.div1{
-	padding-left: 50px;
-	margin-bottom: 45px;
 }
 .content{
 	padding: 10px 50px 10px 50px;
