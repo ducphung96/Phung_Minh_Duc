@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/bai1.css">
+</head>
+<body>
+    <div id="header">
+        <div class="header1">
+            <p>jQuery Steps</p>
+        </div>
+        <div class="header2">
+            <ul class="menu">
+                <li  class="item-li">Getting Started</li>
+                <li  class="item-li">Example</li>
+                <li  class="item-li">Documentation</li>
+                <li  class="item-li">Bootgird</li>
+                <li  class="item-li">Blog</li>
+                <li  class="item-li">GitHub</li>
+                <li  class="item-li">About</li>
+            </ul>
+        </div>
+    </div>
+    <div id="div">
+        <p class="p2">Example</p>
+        <p class="p3">
+            See how beautiful jQuery Steps is and what you can do with it!
+        </p>
+        <div id="div-1">
+            <i class="fab fa-twitter fa-2x"></i>
+            <i class="fab fa-facebook-f fa-2x"></i>
+            <i class="fab fa-instagram fa-2x"></i>
+            <i class="fab fa-google-plus-g fa-2x"></i>
+            <i class="fab fa-youtube fa-2x"></i>
+        </div>
+    </div>
+    <div style="background: #fff;width: 55%; margin: 0 auto;">
+        <p style="font-size: 40px; font-family: arial; padding: 30px 0px 30px 27px; margin: 0px">Advanced Form Example</p>
+    </div>
+    <div id="container">
+        <div style="width: 100%">
+            <div id="item1" class="item">
+                <label>1. Account</label>
+            </div>
+            <div id="item2" class="item">
+                <label>2. Profile</label>
+            </div>
+            <div id="item3" class="item">
+                <label>3. Warning</label>
+            </div>
+            <div id="item4" class="item">
+                <label>4. Finish</label>
+            </div>
+        </div>
+        <form id="form">
+            <div id="account" class="index">
+                <p class="p">Account Information</p>                
+                <hr size="1px" width="100%" color="gray">
+                <p class="p1">User name *</p>
+                <input id="name" class="input" type="text" name="" value="">
+                <label id="errorname" class="error"></label>
+                <p class="p1">Password *</p>
+                <input id="password" class="input" type="password" name="" value="">
+                <label id="errorpassword" class="error"></label>
+                <p class="p1">Confirm Password *</p>
+                <input id="repassword" class="input" type="password" name="" value="">
+                <label id="error-repassword" class="error"></label>
+                <p class="p1">(*) Mandatory</p>
+            </div>
+            <div id="profile" class="index">
+                <p class="p">Profile Information</p>
+                <hr size="1px" width="100%" color="gray">
+                <p class="p1">First name *</p>
+                <input id="firstname" class="input" type="text" name="">
+                <label id="errorfirstname" class="error"></label>
+                <p class="p1">Last name *</p>
+                <input id="lastname" class="input" type="text" name="">
+                <label id="errorlastname" class="error"></label>
+                <p class="p1">Email *</p>
+                <input id="email" class="input" type="text" name="">
+                <label id="erroremail" class="error"></label>
+                <p class="p1">Address *</p>
+                <input id="addre" class="input" type="text" name="">
+                <label id="erroraddre" class="error"></label>
+                <p class="p1">Age (The warning step will show up if age is less than 18) *</p>
+                <input type="number" class="input" name="" id="age">
+                <label id="errorage" class="error"></label>
+                <p class="p1">(*) Mandatory</p>
+            </div>
+            <div id="warning" class="index">
+                <p class="p">Your warning!</p>
+                <hr size="1px" width="100%" color="gray">
+                <label id="errorwarn"></label>
+            </div>
+            <div id="finish" class="index">
+                <p class="p">Terms and Conditions</p>
+                <hr size="1px" width="100%" color="gray">
+                <input type="checkbox" name="" id="checkbox">I agree with the Terms and Conditions.
+                <label  id="errorcheck" class="error"></label>
+            </div>
+        </form>
+        <div class="btn">
+            <input id="prev" class="input1" type="button" name="" value="Previous">
+            <input id="next" class="input1" type="button" name="" value="Next">
+        </div>
+    </div>
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/bai1.js"></script>
+</body>
+</html>
