@@ -12,11 +12,18 @@ $(document).ready(function(){
             }
         };  
         if(index.children().eq(2).css('display') == 'block') {
-            index.children().eq(2).css('display','none');
-            index.children().eq(3).css('display','block');
-            $('#next').text('Finish');
-            $('#item3').css('background','#9dc8e2');
-            $('#item4').css({'background':'#2184be','color':'#fff'});
+            var i = true;
+            var age = $('#age').val();
+            if (parseInt(age)<18) {
+                i = false;
+            }
+            if (i) {
+                index.children().eq(2).css('display','none');
+                index.children().eq(3).css('display','block');
+                $('#next').val('Finish');
+                $('#item3').css('background','#9dc8e2');
+                $('#item4').css({'background':'#2184be','color':'#fff'});
+            }
         }; 
         if(index.children().eq(1).css('display') == 'block') {
             var validateemail = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
@@ -56,9 +63,6 @@ $(document).ready(function(){
             if(age == '') {
                 $('#errorage').text('This field is required.');
                 i = false;
-            }else if(parseInt(age)<18) {
-                $('#errorage').text('Must be over 18 years old!');
-                i = false;
             }
             else{
                 $('#errorage').text('');
@@ -68,7 +72,12 @@ $(document).ready(function(){
                 index.children().eq(2).css('display','block');
                 $('#item2').css('background','#9dc8e2');
                 $('#item3').css({'background':'#2184be','color':'#fff'});
-                $('#errorwarn').text('No warning.');
+                if (parseInt(age)<18) {
+                    $('#errorwarn').text('Must be over 18 years old!')
+                    $('#item3').css('background','red')
+                } else{
+                    $('#errorwarn').text('No warning.')
+                }
             }else{
                 $('#item2').css('background','red');
             }
