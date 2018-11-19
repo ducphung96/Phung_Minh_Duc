@@ -73,7 +73,7 @@ $(document).ready(function(){
                 $('#item2').css('background','#9dc8e2');
                 $('#item3').css({'background':'#2184be','color':'#fff'});
                 if (parseInt(age)<18) {
-                    $('#errorwarn').text('Must be over 18 years old!')
+                    $('#errorwarn').text('Must be over 18 years old! - Go back to the previous step!')
                     $('#item3').css('background','red')
                 } else{
                     $('#errorwarn').text('No warning.')
