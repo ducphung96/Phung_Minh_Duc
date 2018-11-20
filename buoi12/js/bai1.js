@@ -1,12 +1,13 @@
 $(document).ready(function(){
     var index = $('#form');
     $('#next').on('click',function(){
-        if(index.children().eq(3).css('display') == 'block') {
+        if(index.children().next().next().next().css('display') == 'block') {
             $('#item4').on('click', function(){
                 $('#finish').css('display', 'block');
                 $('#account,#profile,#warning').css('display', 'none');
                 $(this).css('background', '#2184be');
                 $('#item1,#item2,#item3').css('background', '#9dc8e2');
+                $('#next').val('finish');
             });
             if ($('#checkbox').prop('checked')) {
                 $('#item4').css('background','#2184be');
@@ -17,12 +18,13 @@ $(document).ready(function(){
                 $('#errorcheck').html('Vui lòng tích vào.');
             }
         };  
-        if(index.children().eq(2).css('display') == 'block') {
+        if(index.children().next().next().css('display') == 'block') {
             $('#item3').on('click', function(){
                 $('#warning').css('display', 'block');
                 $('#account,#profile,#finish').css('display', 'none');
                 $(this).css('background', '#2184be');
                 $('#item1,#item2,#item4').css('background', '#9dc8e2');
+                $('#next').val('next');
             });
             var i = true;
             var age = $('#age').val();
@@ -37,7 +39,7 @@ $(document).ready(function(){
                 $('#item4').css({'background':'#2184be','color':'#fff'});
             }
         }; 
-        if(index.children().eq(1).css('display') == 'block') {
+        if(index.children().next().css('display') == 'block') {
             function validateEmail(email) {
                 var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
                 return re.test(String(email).toLowerCase());
@@ -53,6 +55,7 @@ $(document).ready(function(){
                 $('#account,#warning,#finish').css('display', 'none');
                 $(this).css('background', '#2184be');
                 $('#item1,#item3,#item4').css('background', '#9dc8e2');
+                $('#next').val('next');
             });
             if(firstname == '') {
                 $('#errorfirstname').html('Tên Không được để trống.');
@@ -103,12 +106,13 @@ $(document).ready(function(){
                 $('#item2').css('background','red');
             }
         };
-        if(index.children().eq(0).css('display') == 'block') {
+        if(index.children('#account').css('display') == 'block') {
             $('#item1').on('click', function(){
                 $('#account').css('display', 'block');
                 $('#profile,#warning,#finish').css('display', 'none');
                 $(this).css('background', '#2184be');
                 $('#item2,#item3,#item4').css('background', '#9dc8e2');
+                $('#next').val('next');
             });
             var name = $('#name').val()
             var password = $('#password').val();
