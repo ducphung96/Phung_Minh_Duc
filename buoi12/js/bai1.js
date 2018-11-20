@@ -2,13 +2,6 @@ $(document).ready(function(){
     var index = $('#form');
     $('#next').on('click',function(){
         if(index.children().next().next().next().css('display') == 'block') {
-            $('#item4').on('click', function(){
-                $('#finish').css('display', 'block');
-                $('#account,#profile,#warning').css('display', 'none');
-                $(this).css('background', '#2184be');
-                $('#item1,#item2,#item3').css('background', '#9dc8e2');
-                $('#next').val('finish');
-            });
             if ($('#checkbox').prop('checked')) {
                 $('#item4').css('background','#2184be');
                 $('#errorcheck').html('');
@@ -17,28 +10,14 @@ $(document).ready(function(){
                 $('#item4').css('background','red');
                 $('#errorcheck').html('Vui lòng tích vào.');
             }
-        };  
-        if(index.children().next().next().css('display') == 'block') {
-            $('#item3').on('click', function(){
-                $('#warning').css('display', 'block');
-                $('#account,#profile,#finish').css('display', 'none');
+            $('#item4').on('click', function(){
+                $('#finish').css('display', 'block');
+                $('#account,#profile,#warning').css('display', 'none');
                 $(this).css('background', '#2184be');
-                $('#item1,#item2,#item4').css('background', '#9dc8e2');
-                $('#next').val('next');
+                $('#item1,#item2,#item3').css('background', '#9dc8e2');
+                $('#next').val('finish');
             });
-            var i = true;
-            var age = $('#age').val();
-            if (parseInt(age)<18) {
-                i = false;
-            }
-            if (i) {
-                index.children().eq(2).css('display','none');
-                index.children().eq(3).css('display','block');
-                $('#next').val('Finish');
-                $('#item3').css('background','#9dc8e2');
-                $('#item4').css({'background':'#2184be','color':'#fff'});
-            }
-        }; 
+        };
         if(index.children().next().css('display') == 'block') {
             function validateEmail(email) {
                 var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -50,13 +29,6 @@ $(document).ready(function(){
             var addre = $('#addre').val();
             var age = $('#age').val();
             var i = true;
-            $('#item2').on('click', function(){
-                $('#profile').css('display', 'block');
-                $('#account,#warning,#finish').css('display', 'none');
-                $(this).css('background', '#2184be');
-                $('#item1,#item3,#item4').css('background', '#9dc8e2');
-                $('#next').val('next');
-            });
             if(firstname == '') {
                 $('#errorfirstname').html('Tên Không được để trống.');
                 i = false;
@@ -105,15 +77,37 @@ $(document).ready(function(){
             }else{
                 $('#item2').css('background','red');
             }
-        };
-        if(index.children('#account').css('display') == 'block') {
-            $('#item1').on('click', function(){
-                $('#account').css('display', 'block');
-                $('#profile,#warning,#finish').css('display', 'none');
+            $('#item2').on('click', function(){
+                $('#profile').css('display', 'block');
+                $('#account,#warning,#finish').css('display', 'none');
                 $(this).css('background', '#2184be');
-                $('#item2,#item3,#item4').css('background', '#9dc8e2');
+                $('#item1,#item3,#item4').css('background', '#9dc8e2');
                 $('#next').val('next');
             });
+        };  
+        if(index.children().next().next().css('display') == 'block') {
+            var i = true;
+            var age = $('#age').val();
+            if (parseInt(age)<18) {
+                i = false;
+            }
+            if (i) {
+                index.children().eq(2).css('display','none');
+                index.children().eq(3).css('display','block');
+                $('#next').val('Finish');
+                $('#item3').css('background','#9dc8e2');
+                $('#item4').css({'background':'#2184be','color':'#fff'});
+            }
+            $('#item3').on('click', function(){
+                $('#warning').css('display', 'block');
+                $('#account,#profile,#finish').css('display', 'none');
+                $(this).css('background', '#2184be');
+                $('#item1,#item2,#item4').css('background', '#9dc8e2');
+                $('#next').val('next');
+            });
+        }; 
+        
+        if(index.children('#account').css('display') == 'block') {
             var name = $('#name').val()
             var password = $('#password').val();
             var repassword = $('#repassword').val();
@@ -150,6 +144,13 @@ $(document).ready(function(){
                 $('#item1').css('background','red');
             }
             $('#prev').css({'background':'#2184be','color':'#fff'});
+            $('#item1').on('click', function(){
+                $('#account').css('display', 'block');
+                $('#profile,#warning,#finish').css('display', 'none');
+                $(this).css('background', '#2184be');
+                $('#item2,#item3,#item4').css('background', '#9dc8e2');
+                $('#next').val('next');
+            });
         }; 
     });
     $('#prev').on('click',function(){
